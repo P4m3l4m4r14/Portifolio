@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@1..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <a href="https://drive.google.com/file/d/1nZzQC1lzdWfGVZym6yrXdXg4DnH-f8zo/view?usp=sharing" download="curriculo.pdf" class="btn">Download CV</a>
+
+        <nav class="navigator">
+            <a href="http://lattes.cnpq.br/1228548067343872">Curriculo Lattes</a>
+            /
+            <a href="https://github.com/P4m3l4m4r14">GitHub</a>
+            /
+            <a href="">Instagram</a>
+        </nav>
+    </header>
+    <main>
+        <section class="banner-area">
+            <h1>
+                Olá, sou <strong>Pâmela Maria</strong>. <br>
+                Desenvolvedor <strong>Front-End</strong>,<br>
+                apaixonado por tecnologia.
+            </h1>
+            <button class="btn dark-button" onclick="moveToProjects()">Meus projetos</button>
+        </section>
+        <section class="skills-area">
+            <h2 class="small-title">TECNOLOGIAS</h2>
+            <div class="row-items">
+                <img src="images/JS.png" alt="logo javscript">
+                <img src="images/C.png" alt="logo C">
+                <img src="images/Java.png" alt="logo Java">
+                <img src="images/PHP.png" alt="logo php">
+            </div>
+        </section>
+        <section class="projects-area">
+            <h2 class="small-title">PROJETOS</h2>
+            <div id="projects" class="owl-carousel"></div>
+        </section>
+    </main>
+    <footer>
+        <div class="social-area">
+            <h2>REDES SOCIAIS</h2>
+            <div class="image-content">
+                <a href="">
+                    <img src="images/linkedin.png" alt="imagem do projeto">
+                </a>
+                <a href="">
+                    <img src="images/github.png" alt="imagem do projeto">
+                </a>
+            </div>
+        </div>
+        <div class="contact-area">
+            <h2>CONTATO</h2>
+            <div>
+                <img src="images/o-email.png" alt="imagem do projeto">
+                <span>pamelamaria@alu.ufc.br</span>
+            </div>
+            <div>
+                <img src="images/phone-call.png" alt="imagem do projeto">
+                <span>(88) 9 8886-3296</span>
+            </div>
+        </div>
+        <button class="back-to-top-btn" onclick="backToTop()">
+            <img src="images/avanco-rapido.png" alt="imagem de avanço rápido">
+        </button>
+    </footer>
+
+    <script src="scripts.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".owl-carousel").owlCarousel({
+                loop: true,
+                margin: 10,
+                responsive: {
+                    100: {
+                        items: 1
+                    }
+                },
+                nav: true,
+                navText: ["<img src='images/seta-esquerda.png' alt='imagem do projeto'>", "<img src='images/seta-direita.png' alt='imagem do projeto'>"],
+                autoplay: true,
+                autoplayTimeout: 5000
+            });
+        });
+    </script>
+</body>
+</html>

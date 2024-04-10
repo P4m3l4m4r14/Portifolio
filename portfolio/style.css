@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Hepta Slab", serif;
+}
+
+html,
+body {
+    background-color: rgb(247, 179, 201);
+}
+
+h1,h2,h3,p {
+    color: beige;
+}
+
+header {
+    background: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 4rem;
+    position: absolute;
+    width: 100%;
+}
+
+.navigator>a {
+    color: beige;
+    text-decoration: none;
+    transition: .4s;
+}
+
+.btn,
+.navigator>a:hover {
+    color: beige;
+}
+
+.small-title {
+    font-size: 1.2rem;
+    font-weight: 400;
+    margin: 2rem 0;
+    letter-spacing: 3px;
+}
+
+.btn {
+    background-color: rgba(241, 184, 203, 0.895);
+    font-weight: 600;
+    color: beige;
+    border: none;
+    border-radius: 1rem;
+    padding: .4rem 1.4rem;
+    cursor: pointer;
+    transition: .4s;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: beige;
+    color: rgb(226, 163, 184);
+}
+
+.dark-button {
+    background-color: beige;
+    font-size: 1rem;
+    font-weight: 600;
+    color: palevioletred;
+    margin-top: 1rem;
+    border-radius: 1.5rem;
+}
+
+.dark-button:hover {
+    background-color: rgb(220, 220, 166);
+}
+
+.banner-area {
+    background-color: rgb(174, 90, 118);
+    color: beige;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 80vh;
+    padding: 0 14rem;
+    border: none;
+    border-radius: 0 0 4rem 4rem;
+}
+
+.banner-area > h1 {
+    font-weight: 400;
+    font-size: 1.4rem;
+    text-align: start;
+    max-width: 60%;
+    letter-spacing: 4px;
+}
+
+.banner-area strong {
+    font-size: 2.4rem;
+}
+
+.skills-area {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 40vh;
+    padding: 1rem;
+}
+
+.row-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 60%;
+    max-width: 920px;
+    margin: 2rem 0;
+}
+
+.row-items > img {
+    width: 60px;
+}
+
+.projects-area {
+    background-color: rgb(174, 90, 118);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    min-height: 60vh;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    border: none;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 65%;
+    gap: 4rem;
+}
+
+.owl-carousel {
+    margin-top: 2rem;
+}
+
+.owl-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    width: 50%;
+}
+
+.text-content h1 {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.project-image img{
+    width: 450px !important;
+    height: 235px !important;
+    object-fit: contain;
+}
+
+.image-content {
+    display: flex;
+}
+
+.owl-prev img {
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    left: 2rem; 
+    transform: translateY(-50%);
+}
+
+.owl-next img{
+    width: 24px;
+    position: absolute;
+    top: 50%;
+    right: 2rem; 
+    transform: translateY(-50%);
+}
+
+footer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 4rem;
+    height: 30vh;
+    padding: 1rem 4rem;
+    position: relative;
+}
+
+.contact-area h2,
+.social-area h2 {
+    font-size: 1rem;
+    font-weight: 400;
+    margin: 1.5rem 0;
+}
+
+.social-area img {
+    width: 40px;
+    margin-right: 1rem;
+}
+
+.contact-area {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    color: beige;
+}
+
+.contact-area > div {
+    display: flex;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.contact-area img {
+    width: 18px;
+}
+
+.contact-area span {
+    font-weight: 600;
+}
+
+.back-to-top-btn {
+    background-color: beige;
+    padding: .8rem 1rem;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    right: 6rem;
+    cursor: pointer;
+}
+
+.back-to-top-btn img {
+    width: 60px;
+    rotate: -90deg;
+}
+
